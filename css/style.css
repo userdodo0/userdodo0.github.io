@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Dodo';
+  src: url(https://dodopizza-a.akamaihd.net/site-static/dist/0f46de21c8808e05cb67.eot);
+  src: url(https://dodopizza-a.akamaihd.net/site-static/dist/0f46de21c8808e05cb67.eot) format("embedded-opentype"), url(https://dodopizza-a.akamaihd.net/site-static/dist/fd712e529cccf67bfff6.woff2) format("woff2"), url(https://dodopizza-a.akamaihd.net/site-static/dist/adfdc49a0640e6e0a53c.woff) format("woff"), url(https://dodopizza-a.akamaihd.net/site-static/dist/633e20041c02d8a4afff.ttf) format("truetype"), url(https://dodopizza-a.akamaihd.net/site-static/dist/70b3f40a407042228ce8.svg) format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'), url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  font-family: 'Proxima Nova';
+  color: #FFF;
+  background: linear-gradient(171.69deg, #8E3CB8 4.72%, #B653CA 100.83%);
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  user-select: none;
+}
+.vkApp {
+  max-width: 1000px;
+  height: 600px;
+}
+.intro {
+  padding: 80px 15px 80px 50px;
+}
+.intro__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro__content {
+  max-width: 450px;
+}
+.intro__title {
+  margin-bottom: 20px;
+  font-family: 'Dodo';
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+}
+.intro__btn {
+  padding: 0 32px;
+  background-color: #FE6104;
+  border-radius: 15px;
+  font-size: 24px;
+  line-height: 75px;
+  color: inherit;
+  letter-spacing: 0.02em;
+}
+.intro__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .intro {
+    padding: 20px 15px 40px 50px;
+  }
+  .intro__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .intro__img {
+    width: 200px;
+    order: -2;
+  }
+}
+@media (max-width: 577px) {
+  .intro__title {
+    font-size: 27px;
+    line-height: 37px;
+  }
+  .intro__btn {
+    padding: 0 32px;
+    font-size: 18px;
+    line-height: 69px;
+  }
+}
